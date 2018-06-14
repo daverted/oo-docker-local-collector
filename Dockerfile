@@ -1,4 +1,4 @@
-FROM timveil/overops-base-centos
+FROM timveil/oo-docker-base
 
 LABEL maintainer="tjveil@gmail.com"
 
