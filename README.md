@@ -13,7 +13,7 @@ Although the image contains defaults for all *build* arguments (see `docker buil
 | build-arg | default value | environment variable | note |
 | --- | --- | --- | --- |
 | `SECRET_KEY` | see Dockerfile | `TAKIPI_SECRET_KEY` | default secret key is invalid and must be replaced |
-| `MACHINE_NAME` | `agent-local-collector` | `TAKIPI_MACHINE_NAME` | human readable name of the container |
+| `MACHINE_NAME` | `local-collector-container` | `TAKIPI_MACHINE_NAME` | human readable name of the container |
 
 
 ## Examples
