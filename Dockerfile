@@ -14,4 +14,7 @@ RUN curl -sSL http://get.takipi.com/takipi-t4c-installer | bash /dev/stdin -i \
     --machine_name=$MACHINE_NAME \
     && rm -rf /opt/takipi/installation.key
 
-ENTRYPOINT java -agentlib:TakipiAgent -Dtakipi.debug.logconsole -jar overops-event-generator.jar
+ADD run.sh /run.sh
+RUN chmod a+x /run.sh
+
+CMD ["/run.sh"]
