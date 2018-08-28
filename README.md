@@ -2,6 +2,8 @@
 
 __*Please note, this is not an official OverOps repository or Docker image*__
 
+> Running the `collector` and the `agent` on the same container or instance is not recommended outside of evaluation or other very specific circumstances.  It almost always makes more sense to use the `remote collector` configuration.
+
 This image contains an [OverOps](http://www.overops.com) Agent which talks to a Local Collector.  The Agent attaches to a single JVM running a sample application which generates errors.  More info on this image can be found on [DockerHub](https://hub.docker.com/r/timveil/oo-docker-local-collector/).
 
 Although the image contains defaults for all *build* arguments (see `docker build` and `--build-arg`), to function properly, the image must be built with actual values from your environment or passed to the image using the appropriate *run* time environment variable (see `docker run` and `-e`).  This image accepts the following parameters.
